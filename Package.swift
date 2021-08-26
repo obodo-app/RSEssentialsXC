@@ -3,17 +3,17 @@
 import PackageDescription
  
 let package = Package(
-   name: "RSEssentialsXC",
+   name: "RSEssentials",
    products: [
        .library(
-           name: "RSEssentialsXC",
+           name: "RSEssentials",
            targets: ["RSEssentials"]),
    ],
    targets: [
        .binaryTarget(
            name: "RSEssentials",
            url: "https://github.com/rursache/RSEssentialsXC/raw/master/RSEssentials.xcframework.zip",
-           checksum: "60833fb5ccd9e6efa49a9fdde11e3269685831d8c4ecb494aa05d70437c384d9")
+           checksum: "c7722754a826021f7b40537eb86070ca6973419704c4decb5eb144ca983259c1")
    ],
    swiftLanguageVersions: [.v5]
 )
