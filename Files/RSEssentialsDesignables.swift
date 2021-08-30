@@ -6,7 +6,7 @@
 //
 
 import UIKit
-@_implementationOnly import RSEssentials
+import RSEssentials
 
 public extension UIBarButtonItem {
 	@IBInspectable var localizableKey: String {
