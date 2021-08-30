@@ -53,51 +53,51 @@ public extension UITextField {
 		}
 	}
 }
-public extension UITextView {
-	@IBInspectable var doneAccessory: Bool {
-		get {
-			return self.doneAccessory
-		}
-		set (hasDone) {
-			if hasDone {
-				addDoneButtonOnKeyboard()
-			}
-		}
-	}
-	
-	@IBInspectable var placeholder: String {
-		get {
-			return placeholderLabel.text ?? ""
-		}
-		set {
-			let placeholderLabel = self.placeholderLabel
-			if let validLocalizedPlaceholder = newValue.localizedIfValid() {
-				placeholderLabel.text = validLocalizedPlaceholder
-			} else {
-				placeholderLabel.text = newValue
-			}
-			placeholderLabel.numberOfLines = 0
-			let width = frame.width - textContainer.lineFragmentPadding * 2
-			let size = placeholderLabel.sizeThatFits(CGSize(width: width, height: .greatestFiniteMagnitude))
-			placeholderLabel.frame.size.height = size.height
-			placeholderLabel.frame.size.width = width
-			placeholderLabel.frame.origin = CGPoint(x: textContainer.lineFragmentPadding, y: textContainerInset.top)
-
-			textStorage.delegate = self
-			
-			setNeedsLayout()
-		}
-	}
-	
-	@IBInspectable var placeholderColor: UIColor {
-		get {
-			return placeholderLabel.textColor
-		}
-		set {
-			placeholderLabel.textColor = newValue
-		}
-	}
-}
+//public extension UITextView {
+//	@IBInspectable var doneAccessory: Bool {
+//		get {
+//			return self.doneAccessory
+//		}
+//		set (hasDone) {
+//			if hasDone {
+//				addDoneButtonOnKeyboard()
+//			}
+//		}
+//	}
+//	
+//	@IBInspectable var placeholder: String {
+//		get {
+//			return placeholderLabel.text ?? ""
+//		}
+//		set {
+//			let placeholderLabel = self.placeholderLabel
+//			if let validLocalizedPlaceholder = newValue.localizedIfValid() {
+//				placeholderLabel.text = validLocalizedPlaceholder
+//			} else {
+//				placeholderLabel.text = newValue
+//			}
+//			placeholderLabel.numberOfLines = 0
+//			let width = frame.width - textContainer.lineFragmentPadding * 2
+//			let size = placeholderLabel.sizeThatFits(CGSize(width: width, height: .greatestFiniteMagnitude))
+//			placeholderLabel.frame.size.height = size.height
+//			placeholderLabel.frame.size.width = width
+//			placeholderLabel.frame.origin = CGPoint(x: textContainer.lineFragmentPadding, y: textContainerInset.top)
+//
+//			textStorage.delegate = self
+//			
+//			setNeedsLayout()
+//		}
+//	}
+//	
+//	@IBInspectable var placeholderColor: UIColor {
+//		get {
+//			return placeholderLabel.textColor
+//		}
+//		set {
+//			placeholderLabel.textColor = newValue
+//		}
+//	}
+//}
 
 public extension UIView {
 	@IBInspectable var cornerRadius: CGFloat {
