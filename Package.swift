@@ -21,11 +21,11 @@ let package = Package(
             path: "RSEssentialsWrap"),
        .target(
             name: "RSEssentialsWrapper",
-            dependencies: ["RSEssentials", "PKHUD", "DeviceKit", "RSEssentialsDesignables"],
+            dependencies: ["RSEssentials", "RSEssentialsDesignables"],
             path: "RSEssentialsWrapper"),
 		.target(
 			name: "RSEssentialsDesignables",
-			dependencies: ["RSEssentials"],
+			dependencies: ["RSEssentials", "PKHUD", "DeviceKit"],
 			path: "Files"),
        .binaryTarget(
            name: "RSEssentials",
