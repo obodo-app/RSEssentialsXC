@@ -17,16 +17,20 @@ let package = Package(
    targets: [
        .target(
             name: "RSEssentialsTarget",
-            dependencies: [.target(name: "RSEssentialsWrapper")],
+            dependencies: [.target(name: "RSEssentialsWrapper"), .target(name: "RSEssentialsDesignables")],
             path: "RSEssentialsWrap"),
        .target(
             name: "RSEssentialsWrapper",
             dependencies: ["RSEssentials", "PKHUD", "DeviceKit"],
             path: "RSEssentialsWrapper"),
+		.target(
+			name: "RSEssentialsDesignables",
+			dependencies: ["RSEssentials",],
+			path: "Files"),
        .binaryTarget(
            name: "RSEssentials",
            url: "https://github.com/rursache/RSEssentialsXC/raw/master/RSEssentials.xcframework.zip",
-           checksum: "fcbc8a43069260744d3369a85b7c9295eefeb629d0beca286999d2f34dc17e4d")
+           checksum: "d2351a5d923b9224d9d1784e77c63a48adf63942427652a5c70a75597261c405")
    ],
    swiftLanguageVersions: [.v5]
 )
