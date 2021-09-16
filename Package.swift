@@ -12,7 +12,7 @@ let package = Package(
    ],
    dependencies: [
         .package(name: "PKHUD", url: "https://github.com/pkluz/PKHUD", .upToNextMajor(from: "5.4.0")),
-        .package(name: "DeviceKit", url: "https://github.com/devicekit/DeviceKit", .upToNextMajor(from: "4.4.0")),
+        .package(name: "DeviceKit", url: "https://github.com/devicekit/DeviceKit", .upToNextMajor(from: "4.5.0")),
    ],
    targets: [
        .target(
@@ -30,7 +30,7 @@ let package = Package(
        .binaryTarget(
            name: "RSEssentials",
            url: "https://github.com/rursache/RSEssentialsXC/raw/master/RSEssentials.xcframework.zip",
-           checksum: "c0ba6de96f574f2cef2d3ab7664f476608decd83a788e64aa1d1ad3486dc408e")
+           checksum: "f74a05c2ca2b2df5b899558a03ab89c63fc0d63860b1b62906d1db4784339cc8")
    ],
    swiftLanguageVersions: [.v5]
 )
