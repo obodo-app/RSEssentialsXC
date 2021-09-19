@@ -9,14 +9,10 @@ let package = Package(
            name: "RSEssentials",
            targets: ["RSEssentials+Designables"])
    ],
-   dependencies: [
-        .package(name: "PKHUD", url: "https://github.com/pkluz/PKHUD", .upToNextMajor(from: "5.4.0")),
-        .package(name: "DeviceKit", url: "https://github.com/devicekit/DeviceKit", .upToNextMajor(from: "4.5.0"))
-   ],
    targets: [
        .target(
 			name: "RSEssentials+Designables",
-			dependencies: ["RSEssentials", "PKHUD", "DeviceKit"],
+			dependencies: ["RSEssentials"],
 			path: "Files"),
        .binaryTarget(
            name: "RSEssentials",
