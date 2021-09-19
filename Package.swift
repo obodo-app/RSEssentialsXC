@@ -7,7 +7,7 @@ let package = Package(
    products: [
        .library(
            name: "RSEssentials",
-           targets: ["RSEssentialsTarget"])
+           targets: ["RSEssentials+Designables"])
    ],
    dependencies: [
         .package(name: "PKHUD", url: "https://github.com/pkluz/PKHUD", .upToNextMajor(from: "5.4.0")),
@@ -15,25 +15,8 @@ let package = Package(
    ],
    targets: [
        .target(
-            name: "RSEssentialsTarget",
-            dependencies: [
-                .target(name: "RSEssentialsWrapper", condition: .when(platforms: [.iOS, .macCatalyst]))
-            ],
-            path: "RSEssentialsWrap"),
-       .target(
-            name: "RSEssentialsWrapper",
-            dependencies: [
-                .byName(name: "PKHUD", condition: .when(platforms: [.iOS, .macCatalyst])),
-                .byName(name: "DeviceKit", condition: .when(platforms: [.iOS, .macCatalyst]))
-            ],
-            path: "RSEssentialsWrapper"),
-		.target(
-			name: "RSEssentialsDesignables",
-			dependencies: [
-                .byName(name: "RSEssentials", condition: .when(platforms: [.iOS, .macCatalyst])),
-                .byName(name: "PKHUD", condition: .when(platforms: [.iOS, .macCatalyst])),
-                .byName(name: "DeviceKit", condition: .when(platforms: [.iOS, .macCatalyst]))
-            ],
+			name: "RSEssentials+Designables",
+			dependencies: ["RSEssentials", "PKHUD", "DeviceKit"],
 			path: "Files"),
        .binaryTarget(
            name: "RSEssentials",
