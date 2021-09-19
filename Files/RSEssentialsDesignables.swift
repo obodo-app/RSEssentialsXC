@@ -5,6 +5,8 @@
 //  v1.0
 //
 
+#if canImport(UIKit) && canImport(RSEssentials)
+
 import UIKit
 import RSEssentials
 
@@ -110,3 +112,4 @@ public extension UIView {
 	}
 }
 
+#endif
