@@ -19,14 +19,14 @@ let package = Package(
             dependencies: [
                 .target(name: "RSEssentialsWrapper", condition: .when(platforms: [.iOS, .macCatalyst]))
             ],
-            path: "RSEssentialsWrap")
+            path: "RSEssentialsWrap"),
        .target(
             name: "RSEssentialsWrapper",
             dependencies: [
                 .byName(name: "PKHUD", condition: .when(platforms: [.iOS, .macCatalyst])),
                 .byName(name: "DeviceKit", condition: .when(platforms: [.iOS, .macCatalyst]))
             ],
-            path: "RSEssentialsWrapper")
+            path: "RSEssentialsWrapper"),
 		.target(
 			name: "RSEssentialsDesignables",
 			dependencies: [
@@ -34,11 +34,11 @@ let package = Package(
                 .byName(name: "PKHUD", condition: .when(platforms: [.iOS, .macCatalyst])),
                 .byName(name: "DeviceKit", condition: .when(platforms: [.iOS, .macCatalyst]))
             ],
-			path: "Files")
+			path: "Files"),
        .binaryTarget(
            name: "RSEssentials",
            url: "https://github.com/rursache/RSEssentialsXC/raw/master/RSEssentials.xcframework.zip",
-           checksum: "6a790980e0653f88e9a0b495755812024275a3e2675c2a4bf2b16d8e7e149c1f")
+           checksum: "e05777e16ed417cd7d5dd903ce3acbde03754b45617c41e937d6216f613c15d7")
    ],
    swiftLanguageVersions: [.v5]
 )
