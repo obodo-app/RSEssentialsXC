@@ -1,6 +1,6 @@
 # RSEssentialsXC
 
-⚠️ RSEssentials is meant to be used internally, there will be no support for any breaking changes between releases. I won't accept pull requests or respond to issues. ⚠️
+⚠️ RSEssentials is meant to be used internally, there will be no support for any breaking changes between releases ⚠️
 
 ### Full documentation for internal usage available [here](https://github.com/rursache/RSEssentials/blob/master/README.md)
 
@@ -8,6 +8,7 @@
 - Swift Package Manager (SPM) - `https://github.com/rursache/RSEssentialsXC`
 
 **Note**: Versions up to v1.1.3 supports Xcode 12.x, however you need Xcode 13 for v1.1.4 and newer 
+**Note 2**: There is no Mac Catalyst slice on RSEssentialsXC, if you need Mac Catalyst support ask for access to RSEssentials
 
 ## Setup
 - In your `Info.plist` add the key `NSCameraUsageDescription` with value `We are using the camera to scan QR codes` (or anything you see fit)
