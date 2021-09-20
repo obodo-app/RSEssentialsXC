@@ -1,5 +1,4 @@
-// swift-tools-version:5.3
-// The swift-tools-version declares the minimum version of Swift required to build this package.
+// swift-tools-version:5.5
 import PackageDescription
  
 let package = Package(
@@ -26,7 +25,7 @@ let package = Package(
        .binaryTarget(
            name: "RSEssentials",
            url: "https://github.com/rursache/RSEssentialsXC/raw/master/RSEssentials.xcframework.zip",
-           checksum: "88a52222563e82764460ad3014fadbc4eb1b1abc64b59c30e0e4b36e515f14bd")
+           checksum: "d755f407407bf1ae8f57796c08cb0d59abc38494c5d905c14b737db4e7120efa")
    ],
    swiftLanguageVersions: [.v5]
 )
