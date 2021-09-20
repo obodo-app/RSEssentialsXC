@@ -1,6 +1,6 @@
 # RSEssentialsXC
 
-⚠️ RSEssentials is meant to be used internally, there will be no support for any breaking changes between releases. I won't accept pull requests or respond to issues. ⚠️
+⚠️ There will be no support for using this library ⚠️
 
 ### Full documentation for internal usage available [here](https://github.com/rursache/RSEssentials/blob/master/README.md)
 
