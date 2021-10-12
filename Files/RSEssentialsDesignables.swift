@@ -2,7 +2,7 @@
 //  RSExtension Designables
 //
 //  Created by Radu Ursache - RanduSoft
-//  v1.0
+//  v1.0.1
 //
 
 import UIKit
@@ -50,6 +50,15 @@ public extension UITextField {
 			if hasDone {
 				addDoneButtonOnKeyboard()
 			}
+		}
+	}
+
+	@IBInspectable var localizableKey: String {
+		set {
+			placeholder = newValue.localized()
+		}
+		get {
+			return self.placeholder ?? ""
 		}
 	}
 }
