@@ -25,7 +25,7 @@ let package = Package(
        .binaryTarget(
            name: "RSEssentials",
            url: "https://github.com/rursache/RSEssentialsXC/raw/master/RSEssentials.xcframework.zip",
-           checksum: "d26d951af46fa77985c3c51f7b71d55acfec78dbec7774f4bed8389b7f4deb7f")
+           checksum: "2224d1cab5408116f10473593e944282444ccfdbddd9a4b0c9d6e54baab1d6f0")
    ],
    swiftLanguageVersions: [.v5]
 )
