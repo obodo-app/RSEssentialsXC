@@ -24,7 +24,7 @@ let package = Package(
 			path: "Files"),
        .binaryTarget(
            name: "RSEssentials",
-           url: "https://github.com/rursache/RSEssentialsXC/raw/master/RSEssentials.xcframework.zip",
+           url: "https://github.com/obodo-app/RSEssentialsXC/raw/master/RSEssentials.xcframework.zip",
            checksum: "4d581e92126565d7e2ce42bc975ffb3821e26dca14a9e6544b311bb2c7b08eb6")
    ],
    swiftLanguageVersions: [.v5]
